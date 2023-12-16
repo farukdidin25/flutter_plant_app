@@ -1,0 +1,25 @@
+{
+    "homepage": "Home Page",
+    "hi": "Hi",
+    "welcome": "Welcome",
+    "upload": "Upload Photo",
+    "email": "Email",
+    "password": "Password",
+    "forgetpassword": "Forget Password",
+    "login": "Login",
+    "createaccount": "Create Account",
+    "create": "Oluştur",
+    "guestlogin": "Guest Login",
+    "pleasefillintheinformationcompletely": "Please Fill In The Information",
+    "anerrorwasencountered": "An Error Was Encountered",
+    "name": "Name",
+    "age": "Age",
+    "number": "Number",
+    "createyouritems": "Create Your Items",
+    "error":"Error",
+    "backtohomepage": "Back To Home Page",
+    "usersuccessfullyregistered": "User Succesfully Registered",
+    "youareredirectedtotheloginpage": "You Are Redirectered To The Login Page"
+
+
+}

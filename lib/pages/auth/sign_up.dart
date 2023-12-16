@@ -1,8 +1,10 @@
 // ignore_for_file: prefer_const_constructors, unused_local_variable, use_build_context_synchronously, body_might_complete_normally_nullable
 
+import 'package:easy_localization/easy_localization.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_plant_app/core/init/lang/locale_keys.g.dart';
 import 'package:flutter_plant_app/utils/custom_colors.dart';
 import 'package:flutter_plant_app/utils/custom_text_style.dart';
 
@@ -63,7 +65,7 @@ class _SignUpState extends State<SignUp> {
 
   Text titleText() {
     return Text(
-      "Merhaba, \nHosgeldin",
+      "${LocaleKeys.hi.tr()}\n ${LocaleKeys.welcome.tr()}",
       style: CustomTextStyle.titleTextStyle,
     );
   }
@@ -72,14 +74,14 @@ class _SignUpState extends State<SignUp> {
     return TextFormField(
       validator: (value) {
         if (value!.isEmpty) {
-          return "Bilgileri Eksiksiz Doldurunuz";
+          return LocaleKeys.pleasefillintheinformationcompletely.tr();
         } else {}
       },
       onSaved: (value) {
         email = value!;
       },
       style: TextStyle(color: Colors.white),
-      decoration: customInputDecoration("Email"),
+      decoration: customInputDecoration(LocaleKeys.email.tr()),
     );
   }
 
@@ -87,7 +89,7 @@ class _SignUpState extends State<SignUp> {
     return TextFormField(
       validator: (value) {
         if (value!.isEmpty) {
-          return "Bilgileri Eksiksiz Doldurunuz";
+          return LocaleKeys.pleasefillintheinformationcompletely.tr();
         } else {}
       },
       onSaved: (value) {
@@ -95,7 +97,7 @@ class _SignUpState extends State<SignUp> {
       },
       obscureText: true,
       style: TextStyle(color: Colors.white),
-      decoration: customInputDecoration("Sifre"),
+      decoration: customInputDecoration(LocaleKeys.password.tr()),
     );
   }
 
@@ -104,7 +106,7 @@ class _SignUpState extends State<SignUp> {
       child: TextButton(
         onPressed: signIn,
         child: customText(
-          "Hesap Olustur",
+          LocaleKeys.createaccount.tr(),
           CustomColors.textButtonColor,
         ),
       ),
@@ -121,7 +123,7 @@ class _SignUpState extends State<SignUp> {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
             content: Text(
-                "Kullanici basariliyla kaydedildi, giris sayfasina yonlendiriliyorsunuz"),
+                "${LocaleKeys.usersuccessfullyregistered.tr()} ${LocaleKeys.backtohomepage.tr()}",),
           ),
         );
         Navigator.pushReplacementNamed(context, "/loginPage");
@@ -138,7 +140,7 @@ class _SignUpState extends State<SignUp> {
       child: TextButton(
         onPressed: () => Navigator.pushNamed(context, "/loginPage"),
         child: customText(
-          "Giris Sayfasina Geri Don",
+          LocaleKeys.backtohomepage.tr(),
           CustomColors.textButtonColor,
         ),
       ),

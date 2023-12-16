@@ -1,0 +1,25 @@
+{
+    "homepage": "Ana Sayfa",
+    "hi": "Merhaba",
+    "welcome": "Hoşgeldin",
+    "upload": "Fotoğraf Yükle",
+    "email": "Email",
+    "password": "Şifre",
+    "forgetpassword": "Şifremi Unuttum",
+    "login": "Giriş Yap",
+    "createaccount": "Hesap Oluştur",
+    "create": "Oluştur",
+    "guestlogin": "Misafir Girişi",
+    "pleasefillintheinformationcompletely": "Lütfen Bilgileri Eksiksiz Doldurunuz",
+    "anerrorwasencountered": "Bir hata ile karşılaşıldı",
+    "name": "İsim",
+    "age": "Yaş",
+    "number": "Sayı",
+    "createyouritems": "Öğelerinizi Oluşturun",
+    "error":"Hata",
+    "backtohomepage": "Giriş Sayfasına Geri Dön",
+    "usersuccessfullyregistered": "Kullanıcı Başarıyla Kaydedildi",
+    "youareredirectedtotheloginpage": "Giriş Sayfasına Yönlendiriliyorsunuz"
+
+
+}

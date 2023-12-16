@@ -1,8 +1,10 @@
 // ignore_for_file: prefer_const_constructors, use_build_context_synchronously, body_might_complete_normally_nullable
 
+import 'package:easy_localization/easy_localization.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_plant_app/core/init/lang/locale_keys.g.dart';
 import 'package:flutter_plant_app/service/auth_service.dart';
 import 'package:flutter_plant_app/utils/custom_colors.dart';
 import 'package:flutter_plant_app/utils/custom_text_style.dart';
@@ -56,21 +58,21 @@ class _LoginPageState extends State<LoginPage> {
                     customSizedBox(),
                     CustomTextButton(
                       onPressed: () => Navigator.pushNamed(context, "/signUp"),
-                      buttonText: "Hesap Olustur",
+                      buttonText: LocaleKeys.createaccount.tr(),
                     ),
                     CustomTextButton(
                         onPressed: () async {
                           final result = await authService.signInAnonymous();
                           if (result != null) {
                             Navigator.pushReplacementNamed(
-                                context, "/homePage");
+                                context, "/uploadImageAndMore");
                           } else {
                             if (kDebugMode) {
-                              print("Hata ile karsilasildi");
+                              LocaleKeys.anerrorwasencountered.tr();
                             }
                           }
                         },
-                        buttonText: "Misafir Girisi")
+                        buttonText: LocaleKeys.guestlogin.tr())
                   ],
                 ),
               ),
@@ -83,7 +85,7 @@ class _LoginPageState extends State<LoginPage> {
 
   Text titleText() {
     return Text(
-      "Merhaba, \nHosgeldin",
+    "${LocaleKeys.hi.tr()} \n ${LocaleKeys.welcome.tr()}",
       style: CustomTextStyle.titleTextStyle,
     );
   }
@@ -92,14 +94,14 @@ class _LoginPageState extends State<LoginPage> {
     return TextFormField(
       validator: (value) {
         if (value!.isEmpty) {
-          return "Bilgileri Eksiksiz Doldurunuz";
+          return LocaleKeys.pleasefillintheinformationcompletely.tr();
         } else {}
       },
       onSaved: (value) {
         email = value!;
       },
       style: TextStyle(color: Colors.white),
-      decoration: customInputDecoration("Email"),
+      decoration: customInputDecoration(LocaleKeys.email.tr()),
     );
   }
 
@@ -107,7 +109,7 @@ class _LoginPageState extends State<LoginPage> {
     return TextFormField(
       validator: (value) {
         if (value!.isEmpty) {
-          return "Bilgileri Eksiksiz Doldurunuz";
+          return LocaleKeys.pleasefillintheinformationcompletely.tr();
         } else {}
       },
       onSaved: (value) {
@@ -115,7 +117,7 @@ class _LoginPageState extends State<LoginPage> {
       },
       obscureText: true,
       style: TextStyle(color: Colors.white),
-      decoration: customInputDecoration("Sifre"),
+      decoration: customInputDecoration(LocaleKeys.password.tr()),
     );
   }
 
@@ -124,7 +126,7 @@ class _LoginPageState extends State<LoginPage> {
       child: TextButton(
         onPressed: () {},
         child: customText(
-          "Sifremi Unuttum",
+          LocaleKeys.forgetpassword.tr(),
           CustomColors.textButtonColor,
         ),
       ),
@@ -143,7 +145,7 @@ class _LoginPageState extends State<LoginPage> {
               borderRadius: BorderRadius.circular(50),
               color: Color(0xff31274F)),
           child: Center(
-            child: customText("Giris Yap", CustomColors.loginButtonTextColor),
+            child: customText(LocaleKeys.login.tr(), CustomColors.loginButtonTextColor),
           ),
         ),
       ),
@@ -156,7 +158,7 @@ class _LoginPageState extends State<LoginPage> {
       try {
         final userResult = await firebaseAuth.signInWithEmailAndPassword(
             email: email, password: password);
-        Navigator.pushReplacementNamed(context, "/homePage");
+        Navigator.pushReplacementNamed(context, "/uploadImageAndMore");
         if (kDebugMode) {
           print(userResult.user!.email);
         }
@@ -173,7 +175,7 @@ class _LoginPageState extends State<LoginPage> {
       child: TextButton(
         onPressed: () => Navigator.pushNamed(context, "/signUp"),
         child: customText(
-          "Hesap Olustur",
+          LocaleKeys.createaccount.tr(),
           CustomColors.textButtonColor,
         ),
       ),
