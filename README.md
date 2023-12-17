@@ -1,16 +1,11 @@
 # flutter_plant_app
 
-A new Flutter project.
+# MAİN 
+> [!NOTE]
+The main logic of the application is to develop a system where the user logs in, registers and then stores different plant species, names and photos.
 
-## Getting Started
+# ASSETS
 
-This project is a starting point for a Flutter application.
+> [!NOTE]
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+ 
