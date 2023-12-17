@@ -63,12 +63,14 @@ class _SignUpState extends State<SignUp> {
     );
   }
 
-  Text titleText() {
-    return Text(
-      "${LocaleKeys.hi.tr()}\n ${LocaleKeys.welcome.tr()}",
-      style: CustomTextStyle.titleTextStyle,
-    );
-  }
+Text titleText() {
+  return Text(
+    "${LocaleKeys.hi.tr()} \n ${LocaleKeys.welcome.tr()}",
+    style: CustomTextStyle.titleTextStyle.copyWith(
+      color: Colors.black, 
+    ),
+  );
+}
 
   TextFormField emailTextField() {
     return TextFormField(
@@ -80,7 +82,7 @@ class _SignUpState extends State<SignUp> {
       onSaved: (value) {
         email = value!;
       },
-      style: TextStyle(color: Colors.white),
+      style: TextStyle(color: Colors.grey.shade900),
       decoration: customInputDecoration(LocaleKeys.email.tr()),
     );
   }
@@ -96,7 +98,7 @@ class _SignUpState extends State<SignUp> {
         password = value!;
       },
       obscureText: true,
-      style: TextStyle(color: Colors.white),
+      style: TextStyle(color: Colors.grey.shade900),
       decoration: customInputDecoration(LocaleKeys.password.tr()),
     );
   }

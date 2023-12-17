@@ -9,13 +9,13 @@ class SelectLanguage extends Padding {
 
   SelectLanguage({super.key, required this.context})
       : super(
-          padding: const EdgeInsets.only(right: 15),
+          padding: const EdgeInsets.only(right: 5),
           child: Container(
-            decoration: BoxDecoration(color: Colors.blueAccent[400], borderRadius: BorderRadius.circular(10)),
+            decoration: BoxDecoration(color: Colors.blue, borderRadius: BorderRadius.circular(15)),
             child: DropdownButton(
               iconEnabledColor: Colors.white,
               iconDisabledColor: Colors.white,
-              padding: const EdgeInsets.all(5),
+              padding: const EdgeInsets.all(15),
               isDense: true,
               hint: const Icon(
                 Icons.language_rounded,

@@ -21,7 +21,27 @@
     "usersuccessfullyregistered": "Kullanıcı Başarıyla Kaydedildi",
     "youareredirectedtotheloginpage": "Giriş Sayfasına Yönlendiriliyorsunuz",
     "type": "Tür",
-    "rose": "Örneğin Gül"
+    "rose": "örn Gül",
+    "flower": "örn Çiçek",
+    "about": "Hakkımda",
+    "howtouse": "Nasıl Kullanılır ?",
+    "instructions": "Kullanım Talimatı",
+    "firstplantname": "1. Bitki İsmini Ekleyin",
+    "secondplanttype": "2. Bitki Türü Ekleyin",
+    "thirdplantphoto":"3. Bitki Fotoğrafı Ekleyin",
+    "fourthcreate": "4. Oluşturun",
+    "whyuse": "Neden Kullanırız ?",
+    "why": "Farklı bitki türlerinin fotoğraflarıyla birlikte saklanması ve sergilenmesi için kullanılır.",
+    "surname": "Soyisim",
+    "university": "Üniversite",
+    "eruniversity": "Erciyes Üniversitesi",
+    "faculty": "Fakülte",
+    "erufaculty": "Mühendislik Fakültesi",
+    "license": "Lisans",
+    "erulicense": "Bilgisayar Mühendisliği",
+    "clas": "Sınıf",
+    "eruclass": "3. Sınıf",
+    "software": "Yazılım"
 
 
 }

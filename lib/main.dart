@@ -9,7 +9,6 @@ import 'package:flutter_plant_app/pages/auth/sign_up.dart';
 import 'package:flutter_plant_app/pages/home_page.dart';
 import 'package:flutter_plant_app/upload/upload_file.dart';
 import 'package:flutter_plant_app/utils/application.dart';
-import 'package:flutter_plant_app/utils/custom_colors.dart';
 import 'firebase_options.dart';
 
 void main() async {
@@ -47,7 +46,6 @@ class _MyAppState extends State<MyApp> {
         // '/addPlant': (context) => AddPlantPage(),
       },
       theme: ThemeData(
-        scaffoldBackgroundColor: CustomColors.scaffoldBackgroundColor,
       ),
       home: Scaffold(
 

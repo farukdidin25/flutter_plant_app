@@ -24,5 +24,25 @@ abstract class  LocaleKeys {
   static const youareredirectedtotheloginpage = 'youareredirectedtotheloginpage';
   static const type = 'type';
   static const rose = 'rose';
+  static const flower = 'flower';
+  static const about = 'about';
+  static const howtouse = 'howtouse';
+  static const instructions = 'instructions';
+  static const firstplantname = 'firstplantname';
+  static const secondplanttype = 'secondplanttype';
+  static const thirdplantphoto = 'thirdplantphoto';
+  static const fourthcreate = 'fourthcreate';
+  static const whyuse = 'whyuse';
+  static const why = 'why';
+  static const surname = 'surname';
+  static const university = 'university';
+  static const eruniversity = 'eruniversity';
+  static const faculty = 'faculty';
+  static const erufaculty = 'erufaculty';
+  static const license = 'license';
+  static const erulicense = 'erulicense';
+  static const clas = 'clas';
+  static const eruclass = 'eruclass';
+  static const software = 'software';
 
 }

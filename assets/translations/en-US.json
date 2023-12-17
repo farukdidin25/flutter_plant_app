@@ -21,7 +21,29 @@
     "usersuccessfullyregistered": "User Succesfully Registered",
     "youareredirectedtotheloginpage": "You Are Redirectered To The Login Page",
     "type": "Type",
-    "rose": "exp Rose"
+    "rose": "exp Rose",
+    "flower": "exp Flower",
+    "about": "About Me",
+    "howtouse": "How to Use ?",
+    "instructions": "Instructions",
+    "firstplantname": "1. Add Plant Name",
+    "secondplanttype": "2. Add Plant Species",
+    "thirdplantphoto":"3. Add a Plant Photo",
+    "fourthcreate": "4. Create",
+    "whyuse": "Why Use ?",
+    "why": "It is used for storing and exhibiting different plant species together with their photos.",
+    "surname": "Surname",
+    "university": "University",
+    "eruniversity": "Erciyes University",
+    "faculty": "Faculty",
+    "erufaculty": "Faculty of Engineering",
+    "license": "License",
+    "erulicense": "Computer Engineering",
+    "clas": "Class",
+    "eruclass": "Class 3",
+    "software": "Software"
+
+
 
 
 }

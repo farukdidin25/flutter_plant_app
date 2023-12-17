@@ -82,13 +82,14 @@ class _LoginPageState extends State<LoginPage> {
       ),
     );
   }
-
-  Text titleText() {
-    return Text(
+Text titleText() {
+  return Text(
     "${LocaleKeys.hi.tr()} \n ${LocaleKeys.welcome.tr()}",
-      style: CustomTextStyle.titleTextStyle,
-    );
-  }
+    style: CustomTextStyle.titleTextStyle.copyWith(
+      color: Colors.black, 
+    ),
+  );
+}
 
   TextFormField emailTextField() {
     return TextFormField(
@@ -100,7 +101,7 @@ class _LoginPageState extends State<LoginPage> {
       onSaved: (value) {
         email = value!;
       },
-      style: TextStyle(color: Colors.white),
+      style: TextStyle(color: Colors.grey.shade900),
       decoration: customInputDecoration(LocaleKeys.email.tr()),
     );
   }
@@ -116,7 +117,7 @@ class _LoginPageState extends State<LoginPage> {
         password = value!;
       },
       obscureText: true,
-      style: TextStyle(color: Colors.white),
+      style: TextStyle(color: Colors.grey.shade900),
       decoration: customInputDecoration(LocaleKeys.password.tr()),
     );
   }
