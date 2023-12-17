@@ -19,7 +19,9 @@
     "error":"Hata",
     "backtohomepage": "Giriş Sayfasına Geri Dön",
     "usersuccessfullyregistered": "Kullanıcı Başarıyla Kaydedildi",
-    "youareredirectedtotheloginpage": "Giriş Sayfasına Yönlendiriliyorsunuz"
+    "youareredirectedtotheloginpage": "Giriş Sayfasına Yönlendiriliyorsunuz",
+    "type": "Tür",
+    "rose": "Örneğin Gül"
 
 
 }

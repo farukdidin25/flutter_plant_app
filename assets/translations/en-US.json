@@ -19,7 +19,9 @@
     "error":"Error",
     "backtohomepage": "Back To Home Page",
     "usersuccessfullyregistered": "User Succesfully Registered",
-    "youareredirectedtotheloginpage": "You Are Redirectered To The Login Page"
+    "youareredirectedtotheloginpage": "You Are Redirectered To The Login Page",
+    "type": "Type",
+    "rose": "exp Rose"
 
 
 }

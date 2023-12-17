@@ -11,7 +11,7 @@ class SelectLanguage extends Padding {
       : super(
           padding: const EdgeInsets.only(right: 15),
           child: Container(
-            decoration: BoxDecoration(color: Colors.pink[100], borderRadius: BorderRadius.circular(10)),
+            decoration: BoxDecoration(color: Colors.blueAccent[400], borderRadius: BorderRadius.circular(10)),
             child: DropdownButton(
               iconEnabledColor: Colors.white,
               iconDisabledColor: Colors.white,

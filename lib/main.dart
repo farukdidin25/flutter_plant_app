@@ -21,13 +21,18 @@ void main() async {
   runApp(EasyLocalization(child: MyApp(), supportedLocales: Application.supportedLanguages.toLocale().toList(), path: Application.path.translation));
 }
 
-class MyApp extends StatelessWidget {
+class MyApp extends StatefulWidget {
   const MyApp({Key? key}) : super(key: key);
 
+  @override
+  State<MyApp> createState() => _MyAppState();
+}
+class _MyAppState extends State<MyApp> {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      
       locale: context.locale,
       localizationsDelegates: context.localizationDelegates,
       supportedLocales: context.supportedLocales,
@@ -45,6 +50,7 @@ class MyApp extends StatelessWidget {
         scaffoldBackgroundColor: CustomColors.scaffoldBackgroundColor,
       ),
       home: Scaffold(
+
         body: LoginPage(),
       ),
     );

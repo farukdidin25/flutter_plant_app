@@ -22,5 +22,7 @@ abstract class  LocaleKeys {
   static const backtohomepage = 'backtohomepage';
   static const usersuccessfullyregistered = 'usersuccessfullyregistered';
   static const youareredirectedtotheloginpage = 'youareredirectedtotheloginpage';
+  static const type = 'type';
+  static const rose = 'rose';
 
 }

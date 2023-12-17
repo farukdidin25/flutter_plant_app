@@ -19,7 +19,7 @@ class UploadImageAndMore extends StatefulWidget {
 
 class _UploadImageAndMoreState extends State<UploadImageAndMore> {
   final TextEditingController _nameController = TextEditingController();
-  final TextEditingController _numberController = TextEditingController();
+  final TextEditingController _typeController = TextEditingController();
 
   final CollectionReference _items =
       FirebaseFirestore.instance.collection("Upload_Items");
@@ -47,12 +47,12 @@ class _UploadImageAndMoreState extends State<UploadImageAndMore> {
                 TextField(
                   controller: _nameController,
                   decoration: InputDecoration(
-                      labelText: LocaleKeys.name.tr(), hintText: 'exp Faruk'),
+                      labelText: LocaleKeys.name.tr(), hintText: 'exp Rose'),
                 ),
                 TextField(
-                  controller: _numberController,
+                  controller: _typeController,
                   decoration: InputDecoration(
-                      labelText: LocaleKeys.number.tr(), hintText: 'exp 22'),
+                      labelText: LocaleKeys.type.tr(), hintText: 'exp Flowers'),
                 ),
                 const SizedBox(
                   height: 10,
@@ -93,19 +93,16 @@ class _UploadImageAndMoreState extends State<UploadImageAndMore> {
                             return;
                           }
                           final String name = _nameController.text;
-                          final int? number =
-                              int.tryParse(_numberController.text);
-                          if (number != null) {
-                            await _items.add({
-                              "name": name,
-                              "number": number,
-                              "image": imageUrl,
-                            });
-                            _nameController.text = '';
-                            _numberController.text = '';
-                            Navigator.of(context).pop();
-                          }
-                        },
+                          final String type = _typeController.text;
+                          await _items.add({
+                            "name": name,
+                            "type": type,
+                            "image": imageUrl,
+                          });
+                          _nameController.text = '';
+                          _typeController.text = '';
+                          Navigator.of(context).pop();
+                                                },
                         child: Text(LocaleKeys.create.tr())))
               ],
             ),
@@ -153,7 +150,7 @@ class _UploadImageAndMoreState extends State<UploadImageAndMore> {
                           style: const TextStyle(
                               fontWeight: FontWeight.bold, fontSize: 17),
                         ),
-                        subtitle: Text("${thisItems['number']}"),
+                        subtitle: Text("${thisItems['type']}"),
                         leading: CircleAvatar(
                           radius: 27,
                           child: thisItems.containsKey('image')
